@@ -7,11 +7,13 @@ keys = []
 values = []
 
 check_index = [1, 5, 6, 7, 8, 9, 15, 16, 19]
-match_index = [x - 1 for x in check_index]
+# indexは0からのため調整(冗長なので削除)
+# match_index = [x - 1 for x in check_index]
 # print(match_index)
 
+# enumerateはindex,要素を取得
 for i, word in enumerate(list_text):
-    if i in match_index:
+    if i + 1 in check_index:
         values.append(word[0])
     else:
         values.append(word[:2])

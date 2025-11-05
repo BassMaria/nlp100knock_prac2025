@@ -3,6 +3,7 @@ import random
 
 
 def typoglycemia(text):
+
     def shuffle_word(match):
         word = match.group(0)
         if len(word) <= 4:
@@ -16,6 +17,7 @@ def typoglycemia(text):
 
         shuffled_word = first + "".join(middle) + last
         return shuffled_word
+
     sentence_list = text.split(' ')
     shuffled_sentence = []
 
