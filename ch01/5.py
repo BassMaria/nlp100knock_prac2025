@@ -6,6 +6,7 @@ def n_gram_word(target, n):
 
 # 文字列はシーケンスであるのでlist()で１文字ずつ取り出せる
 # シーケンスとは：indexが0からで格納順序がありイテラブル(反復可能)なもの
+# len(target_list) - n + 1は実際の規則性から発見
 
 
 def n_gram_character(target, n):
