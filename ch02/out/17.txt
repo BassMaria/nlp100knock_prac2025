@@ -1,0 +1,32 @@
+Python
+python 17.py
+1列目の文字列の異なり（種類）の数: 136
+
+--- 異なりの一覧（一部） ---
+Abigail
+Aiden
+Alexander
+Alexis
+Alice
+Amanda
+Amelia
+Amy
+Andrew
+Angela
+
+
+Unix
+$ cut -f 1 popular-names.txt | sort | uniq | wc -l
+136
+$ cut -f 1 popular-names.txt | sort | uniq
+Abigail
+Aiden
+Alexander
+Alexis
+Alice
+Amanda
+Amelia
+Amy
+Andrew
+Angela
+---(以下略)

@@ -1,0 +1,26 @@
+Python
+python 14.py
+Mary
+Anna
+Emma
+Elizabeth
+Minnie
+Margaret
+Ida
+Alice
+Bertha
+Sarah
+
+
+Unix
+$ head -n 10 popular-names.txt | cut -f 1
+Mary
+Anna
+Emma
+Elizabeth
+Minnie
+Margaret
+Ida
+Alice
+Bertha
+Sarah

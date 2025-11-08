@@ -1,0 +1,17 @@
+Python
+python 16.py
+---(最下部から5行目まで略)
+John    M       60929   1968
+Kathleen        F       26715   1951
+James   M       66736   1941
+Anna    F       5115    1899
+Sarah   F       21040   1996
+
+Unix
+shuf popular-names.txt
+---(最下部から5行目まで略)
+Mary    F       12784   189
+Robert  M       2513    1889
+Charles M       38434   1953
+Emily   F       15352   2009
+Christopher     M       45210   1976

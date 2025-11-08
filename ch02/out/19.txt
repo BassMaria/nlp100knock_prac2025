@@ -1,0 +1,17 @@
+Python
+python 19.py
+---(最下部から5行目まで略)
+Annie   F       1326    1881
+Bertha  F       1324    1881
+Bertha  F       1320    1880
+Alice   F       1308    1881
+Sarah   F       1288    1880
+
+Unix
+sort -k 3 -n -r popular-names.txt
+---(最下部から5行目まで略)
+Annie   F       1326    1881
+Bertha  F       1324    1881
+Bertha  F       1320    1880
+Alice   F       1308    1881
+Sarah   F       1288    1880
