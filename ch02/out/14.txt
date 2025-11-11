@@ -13,6 +13,7 @@ Sarah
 
 
 Unix
+# cut -f 1 で1列目を出力(タブ\tが区切り文字)
 $ head -n 10 popular-names.txt | cut -f 1
 Mary
 Anna

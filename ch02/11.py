@@ -8,7 +8,7 @@ def display_head(filename, n):
                 line = f.readline()
                 if not line:
                     break
-                print(line.rstrip('\n'), end='\n')  # 末尾の改行を削除してから改めて改行を出力
+                print(line.rstrip('\n'), end='\n')  # print()が自動で改行するため末尾の改行を削除してから改めて改行を出力
     except FileNotFoundError:
         print(f"エラー: ファイル '{filename}' が見つかりません。", file=sys.stderr)
     except Exception as e:

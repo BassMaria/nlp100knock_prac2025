@@ -15,12 +15,18 @@ python 15.py
 ファイル分割が完了しました。
 
 Unix
+# シェル変数に総行数格納
 $ TOTAL_LINES=$(wc -l < popular-names.txt)
-N=10
+
+$ N=10
+
+# 総行数 / Nの切り上げ
 $ LINES_PER_FILE=$(( (TOTAL_LINES + N - 1) / N ))
-echo "1ファイルあたりの行数: $LINES_PER_FILE"
+
+$ echo "1ファイルあたりの行数: $LINES_PER_FILE"
 1ファイルあたりの行数: 278
 
+# -lで行単位分割，LINES_PER_FILEが基準，プレフィックス(連番)は自動
 $ split -l $LINES_PER_FILE popular-names.txt split_file_
 
 [15ディレクトリ内部を参照]
