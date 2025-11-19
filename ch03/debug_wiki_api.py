@@ -1,13 +1,11 @@
 import requests
 import json
 
-# ======== ここはテストしたい値に書き換えてください =========
 # Wikipedia API endpoint
 API_URL = "https://ja.wikipedia.org/w/api.php"
 
-# 例: 英国国旗画像名（空白は半角スペースのままでOK、API内部で処理される）
+# 英国国旗画像名（空白は半角スペースのままでOK、API内部で処理される）
 filename = "Flag of the United Kingdom.svg"
-# =============================================================
 
 
 # APIに渡すパラメータ

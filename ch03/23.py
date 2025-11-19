@@ -9,8 +9,9 @@ with open(uk_text_file_path, 'r', encoding='utf-8') as f:
 # ^(={2,}) : 行頭から始まり、2個以上の等号が続くグループ1
 # (.*?) : 最小限のマッチングで、セクション名（グループ2）
 # \1$ : グループ1と同じ数の等号が行末にあることを確認
+# re.MULTLINEは行の先頭^末尾$を独立に見るので行ごとに見れるようになってる
 pattern = re.compile(r"^(={2,})\s*(.*?)\s*\1$", re.MULTILINE)
-
+# finditerはマッチした部分をイテレータで返すもの
 sections_data = []
 for match in pattern.finditer(text):
     equals_signs = match.group(1)

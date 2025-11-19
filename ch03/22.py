@@ -3,10 +3,11 @@ uk_text_file_path = 'uk_article_text.txt'
 
 category_names = []
 
-# 正規表現パターン: 
 # \[\[Category:(.+?)(?:\|.+)?\]\]
-# (.+?) : これがカテゴリ名（非貪欲マッチで最短一致）
-# (?:\|.+)? : オプションのソートキー部分 (|* など)
+# \[でエスケープ処理
+# (.+?) : これがカテゴリ名で一文字以上の任意文字を( ]] )手前まで最短でキャプチャ
+# (?:\|.+)? : オプションのソートキー部分 (|* )
+# EX:[[Category:England|*]]ならEnglandをキャプチャする
 pattern = re.compile(r'\[\[Category:(.+?)(?:\|.+)?\]\]')
 with open(uk_text_file_path, 'r', encoding='utf-8') as f:
     text = f.read()
