@@ -9,3 +9,6 @@ wheels/
 # venv
 env0
 .venv
+
+# ch06
+ch06/GoogleNews-vectors-negative300.bin.gz
