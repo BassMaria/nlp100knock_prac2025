@@ -1,0 +1,3 @@
+=== Evaluation Results (677 samples) ===
+Semantic Analogy: 0.8316 (n=677)
+Overall Accuracy: 0.8316
