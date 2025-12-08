@@ -1,0 +1,29 @@
+Loading model...
+
+--- K-Means クラスタリング結果 (k=5) ---
+      Country  Cluster
+0   Macedonia        4
+1      Norway        1
+2       Libya        3
+3      Guinea        3
+4   Nicaragua        4
+5   Australia        1
+6      Rwanda        3
+7  Uzbekistan        0
+8      Sweden        1
+9     Austria        1
+
+--- Cluster 0 (15 countries) ---
+['Uzbekistan', 'Azerbaijan', 'Moldova', 'Russia', 'Tajikistan', 'Ukraine', 'Kyrgyzstan', 'dram', 'Belarus', 'Turkey', 'Kazakhstan', 'Armenia', 'Turkmenistan', 'Georgia', 'Iran']
+
+--- Cluster 1 (20 countries) ---
+['Norway', 'Australia', 'Sweden', 'Austria', 'Denmark', 'France', 'Canada', 'Italy', 'Switzerland', 'Portugal', 'Belgium', 'Finland', 'England', 'Ireland', 'Japan', 'Spain', 'Greenland', 'Germany', 'Jordan', 'Liechtenstein']
+
+--- Cluster 2 (19 countries) ---
+['Liberia', 'Uganda', 'Belize', 'Malawi', 'Namibia', 'Guyana', 'Botswana', 'Gambia', 'Ghana', 'Jamaica', 'Zambia', 'Fiji', 'Kenya', 'Nigeria', 'Suriname', 'Dominica', 'Mozambique', 'Zimbabwe', 'Bahamas']
+
+--- Cluster 3 (27 countries) ---
+['Libya', 'Guinea', 'Rwanda', 'Lebanon', 'Mali', 'Somalia', 'Burundi', 'Afghanistan', 'Gabon', 'Qatar', 'Iraq', 'Eritrea', 'Syria', 'Senegal', 'Madagascar', 'Bahrain', 'Morocco', 'Tunisia', 'Bangladesh', 'Oman', 'Angola', 'Egypt', 'Mauritania', 'Niger', 'Pakistan', 'Algeria', 'Sudan']
+
+--- Cluster 4 (38 countries) ---
+['Macedonia', 'Nicaragua', 'Nepal', 'Honduras', 'Bulgaria', 'Greece', 'Bhutan', 'Peru', 'Indonesia', 'Tuvalu', 'Samoa', 'Lithuania', 'Albania', 'kwanza', 'Philippines', 'Estonia', 'Hungary', 'Romania', 'Slovenia', 'Slovakia', 'Poland', 'Chile', 'Latvia', 'Malta', 'Taiwan', 'Uruguay', 'Cyprus', 'peso', 'Cuba', 'Croatia', 'Thailand', 'China', 'Serbia', 'Montenegro', 'Ecuador', 'Venezuela', 'Vietnam', 'Laos']
