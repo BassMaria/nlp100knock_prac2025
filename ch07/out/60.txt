@@ -1,0 +1,11 @@
+ポジティブ(1)とネガティブ(0)
+trainの事例数
+label
+1    37569
+0    29780
+Name: count, dtype: int64
+devの事例数
+label
+1    444
+0    428
+Name: count, dtype: int64
