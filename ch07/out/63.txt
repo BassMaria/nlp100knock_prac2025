@@ -1,0 +1,4 @@
+sentence: it 's a charming and often affecting journey . 
+True Label: 1
+Predicted Label: 1
+Correctness of Prediction: True

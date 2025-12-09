@@ -1,0 +1,4 @@
+sentence: it 's a charming and often affecting journey . 
+True label: 1
+形式: [ネガティブ(0) ポジティブ(1)]
+条件付き確率: [0.00431488 0.99568512]
