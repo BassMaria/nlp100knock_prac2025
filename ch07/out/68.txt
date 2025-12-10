@@ -1,0 +1,45 @@
+=== 重みが大きい特徴量 Top 20 ===
+           feature    weight
+10593   refreshing  3.433306
+10675   remarkable  3.429865
+9915      powerful  3.221821
+6169     hilarious  3.184076
+1263     beautiful  3.002405
+14622    wonderful  2.973479
+10145        prose  2.938954
+13103     terrific  2.871996
+788      appealing  2.858661
+4321     enjoyable  2.812749
+13492        treat  2.800031
+2180       charmer  2.753032
+14212      vividly  2.718361
+7627       likable  2.696037
+12089        solid  2.656408
+5877      half-bad  2.627541
+4802   fascinating  2.626305
+2181      charming  2.619937
+6574    impressive  2.597543
+6901    intriguing  2.564887
+
+=== 重みが小さい特徴量 Top 20 ===
+             feature    weight
+7365         lacking -4.341024
+7367           lacks -4.083905
+14674          worst -3.980193
+3543          devoid -3.657165
+8216            mess -3.622594
+4729         failure -3.585733
+12618         stupid -3.349446
+1615            bore -3.259905
+5021            flat -3.226229
+3456      depressing -3.204085
+7780           loses -3.176690
+14322          waste -3.157132
+7361            lack -3.059325
+12321      squanders -3.042400
+5973          hardly -3.032922
+8844            none -3.023760
+9829            poor -2.986977
+9789       pointless -2.960211
+13856  unfortunately -2.944520
+7793           lousy -2.934095
