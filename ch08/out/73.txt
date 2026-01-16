@@ -1,0 +1,11 @@
+Starting training on 66650 samples...
+Epoch 1/10, Loss: 0.5025
+Epoch 2/10, Loss: 0.4209
+Epoch 3/10, Loss: 0.4010
+Epoch 4/10, Loss: 0.3913
+Epoch 5/10, Loss: 0.3855
+Epoch 6/10, Loss: 0.3816
+Epoch 7/10, Loss: 0.3787
+Epoch 8/10, Loss: 0.3767
+Epoch 9/10, Loss: 0.3750
+Epoch 10/10, Loss: 0.3737
