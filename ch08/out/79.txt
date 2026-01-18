@@ -1,0 +1,18 @@
+Epoch 1: Train Acc 76.60%, Dev Acc 82.34%
+Epoch 2: Train Acc 83.43%, Dev Acc 84.06%
+Epoch 3: Train Acc 85.77%, Dev Acc 82.22%
+Epoch 4: Train Acc 87.36%, Dev Acc 82.22%
+Epoch 5: Train Acc 88.30%, Dev Acc 82.34%
+Epoch 6: Train Acc 89.10%, Dev Acc 81.88%
+Epoch 7: Train Acc 89.80%, Dev Acc 82.80%
+Epoch 8: Train Acc 90.43%, Dev Acc 82.57%
+Epoch 9: Train Acc 90.78%, Dev Acc 82.80%
+Epoch 10: Train Acc 91.33%, Dev Acc 82.45%
+
+学習済みモデルの分類テスト
+'This movie was absolutely fantastic!' → ポジティブ (確信度: 99.1%)
+'The worst film I've ever seen.' → ネガティブ (確信度: 99.8%)
+'It's okay, nothing special.' → ネガティブ (確信度: 86.4%)
+'Brilliant acting and stunning visuals.' → ポジティブ (確信度: 100.0%)
+'Boring plot and poor direction.' → ネガティブ (確信度: 99.9%)
+'A decent film with some good moments.' → ポジティブ (確信度: 99.9%)
