@@ -1,0 +1,10 @@
+Epoch 1: Train Acc 58.51%, Dev Acc 60.89%
+Epoch 2: Train Acc 64.16%, Dev Acc 64.68%
+Epoch 3: Train Acc 67.32%, Dev Acc 67.20%
+Epoch 4: Train Acc 69.72%, Dev Acc 70.53%
+Epoch 5: Train Acc 71.84%, Dev Acc 72.02%
+Epoch 6: Train Acc 73.46%, Dev Acc 72.13%
+Epoch 7: Train Acc 74.77%, Dev Acc 73.28%
+Epoch 8: Train Acc 76.09%, Dev Acc 73.28%
+Epoch 9: Train Acc 76.92%, Dev Acc 74.54%
+Epoch 10: Train Acc 77.59%, Dev Acc 74.77%
