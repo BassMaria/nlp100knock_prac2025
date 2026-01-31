@@ -1,0 +1,13 @@
+元の文: The movie was full of incomprehensibilities.
+トークン 0: the
+トークン 1: movie
+トークン 2: was
+トークン 3: full
+トークン 4: of
+トークン 5: inc
+トークン 6: ##omp
+トークン 7: ##re
+トークン 8: ##hen
+トークン 9: ##si
+トークン 10: ##bilities
+トークン 11: .
