@@ -1,0 +1,2 @@
+元の文: The movie was full of [MASK].
+予測されたトークン: fun
