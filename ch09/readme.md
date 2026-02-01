@@ -29,3 +29,8 @@ $$
 - Input IDsはトークンの辞書番号(101=CLS,0=PAD)
 - Attention Maskはモデルに対しての意味のある場所はどこかのヒント
 ## 87
+### 流れ
+TSV読み込み → Dataset化 → トークン化 → Trainer設定 → GPU学習 → 評価
+- AutoModelForSequenceClassification とは，これまでの AutoModel は文をベクトルに変えるだけだったが，このクラスはベクトルの上に0か1かを判定する出力層が最初から合体している．
+- なぜ学習率を低めで行うのかに関しては，BERTの基本的な能力を損なわずに感情分析向けにするため
+## 88
