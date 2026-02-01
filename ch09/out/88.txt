@@ -1,0 +1,17 @@
+Using device: cuda
+------------------------------
+Text: The movie was full of incomprehensibilities.
+Prediction: Negative (99.86%)
+
+Text: The movie was full of fun.
+Prediction: Positive (99.94%)
+
+Text: The movie was full of excitement.
+Prediction: Positive (99.91%)
+
+Text: The movie was full of crap.
+Prediction: Negative (99.90%)
+
+Text: The movie was full of rubbish.
+Prediction: Negative (99.90%)
+
