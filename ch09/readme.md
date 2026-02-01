@@ -38,3 +38,4 @@ TSV読み込み → Dataset化 → トークン化 → Trainer設定 → GPU学�
 - ポジティブ1,ネガティブ0で87で学習したモデルで推論している
 ## 89
 - モデル変更とepoch10->3にしただけで，SST2でファインチューニングされているモデル使用してみた(https://huggingface.co/doyoungkim/bert-base-uncased-finetuned-sst2)
+- 他に使用しようとしたモデル(https://huggingface.co/clampert/multilingual-sentiment-covid19)
