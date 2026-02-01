@@ -1,0 +1,12 @@
+Train Data Preview
+                                            sentence  label
+0       hide new secretions from the parental units       0
+1               contains no wit , only labored gags       0
+2  that loves its characters and communicates som...      1
+3  remains utterly satisfied to remain the same t...      0
+4  on the worst revenge-of-the-nerds clichés the ...      0
+
+Tokenization Result (Example 1)
+Original: hide new secretions from the parental units 
+Label: 0
+Tokens: ['hide', 'new', 'secret', '##ions', 'from', 'the', 'parental', 'units']
