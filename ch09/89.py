@@ -63,6 +63,11 @@ trainer = Trainer(
     eval_dataset=dev_dataset,
     compute_metrics=compute_metrics,
 )
+# 学習前の評価
+print("Evaluating BEFORE training")
+pre_eval_results = trainer.evaluate()
+print(f"Pre-training Validation Accuracy: {pre_eval_results['eval_accuracy']:.4f}")
+print("-" * 30)
 
 # 学習
 trainer.train()
