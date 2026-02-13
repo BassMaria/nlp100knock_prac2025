@@ -1,0 +1,17 @@
+[Greedy (Standard)]
+ -> The movie was full of jokes and jokes about how the movie was a joke. It was a joke
+
+[Greedy (Low Temp)]
+ -> The movie was full of jokes and jokes about how the movie was a joke. It was a joke
+
+[Beam Search]
+ -> The movie was full of jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes
+
+[Top-K Sampling]
+ -> The movie was full of great moments from the cast, including a cameo from director John DuPaul,
+
+[Top-P (Nucleus) Sampling]
+ -> The movie was full of jokes that I just wanted to keep trying."
+
+Cinema giant
+
