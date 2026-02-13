@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 
 # 設定
-model_dir = "./ch10/results/gpt2-sst2"
+model_dir = "./ch10/results/gpt2-dpo"
 dev_path = "./ch07/SST-2/dev.tsv"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

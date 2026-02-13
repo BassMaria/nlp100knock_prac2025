@@ -3,7 +3,7 @@ import pandas as pd
 from datasets import Dataset
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from trl import DPOTrainer, DPOConfig
-
+import os
 
 # GPU設定
 
@@ -85,7 +85,7 @@ trainer = DPOTrainer(
     ref_model=ref_model,
     args=training_args,
     train_dataset=dataset,
-    tokenizer=tokenizer,
+    processing_class=tokenizer,
 )
 
 trainer.train()
