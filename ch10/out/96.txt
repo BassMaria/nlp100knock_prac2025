@@ -1,0 +1,5 @@
+
+---RESULT---
+Accuracy: 0.8968
+Correct : 782
+Total   : 872
