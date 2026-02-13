@@ -1,0 +1,25 @@
+1回目の応答:
+<|assistant|>
+A post-dinner dessert.
+
+モデルに与えるプロンプト:
+<|system|>
+You are a helpful assistant. Please answer the following questions.</s>
+<|user|>
+What do you call a sweet eaten after dinner?</s>
+<|assistant|>
+<|assistant|>
+A post-dinner dessert.</s>
+<|user|>
+Please give me the plural form of the word with its spelling in reverse order.</s>
+
+
+2回目の応答:
+<|assistant|>
+The plural form of the word "with" is "withs." Here's the spelling in reverse order:
+
+- withs
+- withes
+- withes
+- withes
+
