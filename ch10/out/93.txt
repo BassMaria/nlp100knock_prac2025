@@ -1,0 +1,6 @@
+Sentence                                 |     PPL
+--------------------------------------------------
+The movie was full of surprises          |   99.35
+The movies were full of surprises        |  126.48
+The movie were full of surprises         |  278.88
+The movies was full of surprises         |  274.66
