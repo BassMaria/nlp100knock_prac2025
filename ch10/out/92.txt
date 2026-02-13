@@ -1,0 +1,14 @@
+Prompt: The movie was full of
+------------------------------
+Step 1: ' all' (Likelihood: 0.0105)
+Step 2: ' kinds' (Likelihood: 0.2129)
+Step 3: ' of' (Likelihood: 0.9904)
+Step 4: ' crazy' (Likelihood: 0.1019)
+Step 5: ' ideas' (Likelihood: 0.0807)
+Step 6: ',' (Likelihood: 0.2976)
+Step 7: ' but' (Likelihood: 0.2324)
+Step 8: ' was' (Likelihood: 0.0114)
+Step 9: ' mostly' (Likelihood: 0.0751)
+Step 10: ' about' (Likelihood: 0.4270)
+------------------------------
+Final: The movie was full of all kinds of crazy ideas, but was mostly about
