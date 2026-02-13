@@ -1,0 +1,6 @@
+
+===== DEV RESULT =====
+Accuracy : 0.9140
+Correct  : 797
+Total    : 872
+Invalid  : 0
