@@ -1,0 +1,14 @@
+{'loss': 0.7927, 'grad_norm': 70.3511734008789, 'learning_rate': 0.00046049089469517025, 'epoch': 0.24}
+{'loss': 0.7794, 'grad_norm': 2.162569046020508, 'learning_rate': 0.00042090261282660334, 'epoch': 0.48}
+{'loss': 0.7549, 'grad_norm': 2.4500787258148193, 'learning_rate': 0.0003813143309580364, 'epoch': 0.71}
+{'loss': 0.7547, 'grad_norm': 62.13338851928711, 'learning_rate': 0.0003417260490894695, 'epoch': 0.95}
+{'loss': 0.7368, 'grad_norm': 47.03546142578125, 'learning_rate': 0.00030213776722090265, 'epoch': 1.19}
+{'loss': 0.7346, 'grad_norm': 44.58401107788086, 'learning_rate': 0.0002625494853523357, 'epoch': 1.43}
+{'loss': 0.7226, 'grad_norm': 36.21355438232422, 'learning_rate': 0.0002229612034837688, 'epoch': 1.66}
+{'loss': 0.7238, 'grad_norm': 39.08822250366211, 'learning_rate': 0.0001833729216152019, 'epoch': 1.9}
+{'loss': 0.7216, 'grad_norm': 21.40317153930664, 'learning_rate': 0.000143784639746635, 'epoch': 2.14}
+{'loss': 0.7055, 'grad_norm': 53.7751350402832, 'learning_rate': 0.0001041963578780681, 'epoch': 2.38}
+{'loss': 0.698, 'grad_norm': 55.42306137084961, 'learning_rate': 6.46080760095012e-05, 'epoch': 2.61}
+{'loss': 0.6936, 'grad_norm': 63.77024841308594, 'learning_rate': 2.5019794140934282e-05, 'epoch': 2.85}
+{'train_runtime': 724.5735, 'train_samples_per_second': 278.85, 'train_steps_per_second': 8.715, 'train_loss': 0.7326708046859536, 'epoch': 3.0}
+最終評価: {'eval_loss': 0.698634922504425, 'eval_accuracy': 0.5091743119266054, 'eval_runtime': 4.5619, 'eval_samples_per_second': 191.148, 'eval_steps_per_second': 6.138, 'epoch': 3.0}
