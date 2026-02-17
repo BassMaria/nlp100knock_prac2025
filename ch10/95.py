@@ -1,57 +1,61 @@
-import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import os
+import torch
 
-# GPUの設定
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # GPU0のみ使用
-torch.cuda.set_device(0)
-
-
-model_id = "Qwen/Qwen2-7B-Instruct"
+model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
-
-if torch.cuda.is_available():
-    dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
-    device_map = "auto"
-else:
-    dtype = torch.float32
-    device_map = None
-
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    torch_dtype=dtype,
-    device_map=device_map,
+    device_map="auto",
+    torch_dtype=torch.float16
 )
 
+# --- 初期チャット（問題94の状態） ---
 chat = [
-    {"role": "system", "content": "You are a helpful assistant. Please answer the following questions."},
+    {
+        "role": "system",
+        "content": "You are a helpful assistant. Please answer the following questions.",
+    },
     {"role": "user", "content": "What do you call a sweet eaten after dinner?"},
-    {"role": "assistant", "content": "A sweet eaten after dinner is called a dessert."},
-    {"role": "user", "content": "Please give me the plural form of the word with its spelling in reverse order."},
 ]
 
+# プロンプト生成
+prompt = tokenizer.apply_chat_template(chat, tokenize=False)
+inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
-text = tokenizer.apply_chat_template(
-    chat,
-    tokenize=False,
-    add_generation_prompt=True,
-)
+# 1回目の応答生成
+outputs = model.generate(**inputs, max_new_tokens=50, do_sample=False)
 
-inputs = tokenizer(text, return_tensors="pt").to(model.device)
+# 生成部分のみ取り出す
+generated_tokens = outputs[0][inputs.input_ids.shape[1]:]
+answer1 = tokenizer.decode(generated_tokens, skip_special_tokens=True)
 
-with torch.inference_mode():
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=50,
-        do_sample=True,
-        temperature=0.7,
-        repetition_penalty=1.1,
-        pad_token_id=tokenizer.eos_token_id,
-    )
+print("1回目の応答:")
+print(answer1)
 
-generated = outputs[0][inputs["input_ids"].shape[-1]:]
-response = tokenizer.decode(generated, skip_special_tokens=True)
+# --- 応答を履歴に追加 ---
+chat.append({"role": "assistant", "content": answer1})
 
-print("生成された応答:")
-print(response)
+# --- 追加質問（問題95） ---
+chat.append({
+    "role": "user",
+    "content": "Please give me the plural form of the word with its spelling in reverse order."
+})
+
+# プロンプト確認
+prompt2 = tokenizer.apply_chat_template(chat, tokenize=False)
+
+print("\nモデルに与えるプロンプト:")
+print(prompt2)
+
+# トークン化
+inputs2 = tokenizer(prompt2, return_tensors="pt").to(model.device)
+
+# 応答生成
+outputs2 = model.generate(**inputs2, max_new_tokens=50,do_sample=False)
+
+generated_tokens2 = outputs2[0][inputs2.input_ids.shape[1]:]
+answer2 = tokenizer.decode(generated_tokens2, skip_special_tokens=True)
+
+print("\n2回目の応答:")
+print(answer2)
