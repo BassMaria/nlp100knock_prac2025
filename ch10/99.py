@@ -69,14 +69,11 @@ ref_model = GPT2LMHeadModel.from_pretrained("gpt2")
 
 training_args = DPOConfig(
     output_dir="./ch10/results/gpt2-dpo",
-    per_device_train_batch_size=8,   # OOM回避で8推奨
-    per_device_eval_batch_size=8,
-    num_train_epochs=3,
-    logging_steps=1000,
-    learning_rate=5e-5,
-    weight_decay=0.01,
+    per_device_train_batch_size=4,
+    learning_rate=5e-6,
+    num_train_epochs=1,
+    logging_steps=50,
     fp16=torch.cuda.is_available(),
-    report_to="none"   # wandb無効
 )
 
 

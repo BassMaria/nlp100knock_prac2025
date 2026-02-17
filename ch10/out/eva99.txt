@@ -1,6 +1,6 @@
 
 ===== DEV RESULT =====
-Accuracy : 0.5195
-Correct  : 453
+Accuracy : 0.7649
+Correct  : 667
 Total    : 872
-Invalid  : 381
+Invalid  : 165
